@@ -1,0 +1,781 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Heebo", sans-serif;
+    color: #181d38;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+.header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    background: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #06bbcc;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.logo i {
+    font-size: 25px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-left: auto;
+}
+
+.navbar a {
+    color: #181d38;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.navbar a:hover,
+.navbar .active {
+    color: #06bbcc;
+}
+
+.navbar i {
+    font-size: 9px;
+    margin-left: 3px;
+}
+
+.join-btn {
+    height: 70px;
+    background: #06bbcc;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 28px;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+
+
+.pg2{
+    height: 400px;
+    width:100%;
+    background-image: url("https://themewagon.github.io/elearning/img/carousel-2.jpg?utm_source=chatgpt.com") ;
+    background-size: 100% 100%;
+   
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.pg2-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(24, 29, 56, 0.72);
+}
+
+.pg2-content {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 1140px;
+    margin: auto;
+    color: white;
+}
+
+.small-title {
+    color: #06bbcc;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    line-height: 1.15;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    width: 600px;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.primary-btn {
+    background: #06bbcc;
+    color: white;
+}
+
+.white-btn {
+    background: white;
+    color: #181d38;
+}
+
+.slider-buttons {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.slider-buttons button {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,.5);
+    color: white;
+}
+
+
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 65px 0 30px;
+}
+
+.feature-box {
+    background: #f0fbfc;
+    text-align: center;
+    padding: 28px 20px;
+    transition: .3s;
+}
+
+.feature-box:hover {
+    background: #06bbcc;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.feature-box i {
+    color: #06bbcc;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.feature-box:hover i {
+    color: white;
+}
+
+.feature-box h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    color: #666;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.feature-box:hover p {
+    color: white;
+}
+
+
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    width: 35px;
+    height: 2px;
+    background: #06bbcc;
+}
+
+.section-title span {
+    color: #06bbcc;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.section-heading h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+    padding: 55px 0 75px;
+}
+
+.about-image img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.about-content .section-title {
+    justify-content: flex-start;
+}
+
+.about-content .section-title::before {
+    display: none;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.about-content > p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.about-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 18px 0;
+}
+
+.about-list p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.about-list i {
+    color: #06bbcc;
+    margin-right: 5px;
+}
+
+
+
+
+.categories {
+    padding-bottom: 80px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 10px;
+}
+
+.category-left {
+    display: grid;
+    gap: 10px;
+}
+
+.category-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.category-item img {
+    height: 180px;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.category-item:hover img {
+    transform: scale(1.05);
+}
+
+.category-item.large img {
+    height: 220px;
+}
+
+.small-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.small-categories .category-item img {
+    height: 160px;
+}
+
+.right-category img {
+    height: 390px;
+}
+
+.category-text {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: white;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.category-text h3 {
+    font-size: 14px;
+}
+
+.category-text p {
+    color: #06bbcc;
+    font-size: 11px;
+}
+
+
+
+.courses {
+    padding-bottom: 80px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.course-card {
+    background: #f0fbfc;
+}
+
+.course-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.course-image img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.course-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.course-buttons a {
+    background: #06bbcc;
+    color: white;
+    padding: 9px 18px;
+    font-size: 11px;
+    margin: 0 2px;
+}
+
+.course-content {
+    padding: 18px;
+    text-align: center;
+}
+
+.course-content h3 {
+    font-size: 22px;
+}
+
+.stars {
+    color: #06bbcc;
+    font-size: 13px;
+    margin: 3px 0 10px;
+}
+
+.course-content h4 {
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
+    padding-top: 12px;
+    font-size: 10px;
+    color: #666;
+}
+
+.course-info i {
+    color: #06bbcc;
+}
+
+
+
+.instructors {
+    padding-bottom: 80px;
+}
+
+.instructor-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.instructor-card {
+    background: #f0fbfc;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.instructor-card img {
+    height: 270px;
+    object-fit: cover;
+}
+
+.instructor-card h3 {
+    font-size: 15px;
+    margin-top: 18px;
+}
+
+.instructor-card p {
+    color: #777;
+    font-size: 11px;
+    padding-bottom: 18px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: -18px;
+    position: relative;
+}
+
+.social a {
+    width: 30px;
+    height: 30px;
+    background: #06bbcc;
+    color: white;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
+
+.testimonial {
+    padding-bottom: 80px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.testimonial-card {
+    padding: 20px;
+}
+
+.testimonial-card img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.testimonial-card h3 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.testimonial-card > p {
+    font-size: 11px;
+    color: #888;
+}
+
+.quote {
+    color: #777;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+.active-testimonial {
+    background: #06bbcc;
+    color: white;
+}
+
+.active-testimonial > p,
+.active-testimonial .quote {
+    color: white;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.dots span {
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    border: 1px solid #06bbcc;
+    margin: 2px;
+}
+
+.dots .active {
+    background: #06bbcc;
+}
+
+
+.footer {
+    background: #181d38;
+    color: white;
+    padding: 55px 5% 20px;
+}
+
+.footer-container {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-column > a {
+    display: block;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.footer-column > a:hover {
+    color: #06bbcc;
+}
+
+.footer-column p {
+    color: #ddd;
+    font-size: 11px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+.footer-column p i {
+    width: 20px;
+    color: #06bbcc;
+}
+
+.footer-social {
+    display: flex;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.footer-social a {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.gallery img {
+    height: 55px;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.newsletter {
+    display: flex;
+    background: white;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.newsletter input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    font-size: 11px;
+}
+
+.newsletter button {
+    border: none;
+    background: #06bbcc;
+    color: white;
+    padding: 8px 12px;
+    font-size: 11px;
+}
+
+.footer-bottom {
+    max-width: 1140px;
+    margin: 40px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,.15);
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+}
+
+.footer-bottom p {
+    color: #ddd;
+}
+
+.footer-bottom a {
+    color: white;
+    margin-left: 20px;
+}
+
+
+
+@media (max-width: 900px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .instructor-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        padding-left: 20px;
+    }
+
+    .join-btn {
+        padding: 0 15px;
+        margin-left: 10px;
+    }
+
+    .hero {
+        height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .small-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .instructor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
