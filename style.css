@@ -83,14 +83,8 @@ img {
     margin-left: 25px;
     font-size: 14px;
 }
-.mobile-menu-btn{
-    display: none;
-    background: transparent;
-    border: none;
-    color: var(--primary);
-    font-size: 24px;
-    cursor: pointer;
-    margin-left:15px ;
+#menu-toggle:checked ~ .menu {
+    display: block;
 }
 
 
