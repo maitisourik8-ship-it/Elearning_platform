@@ -83,7 +83,21 @@ img {
     margin-left: 25px;
     font-size: 14px;
 }
+.hamburger {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
 
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
 
 
 .pg2{
