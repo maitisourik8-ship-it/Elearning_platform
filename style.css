@@ -26,6 +26,7 @@ img {
     margin: auto;
 }
 
+
 .header {
     height: 70px;
     display: flex;
@@ -84,11 +85,12 @@ img {
 }
 
 
+
 .pg2{
-    height: 400px;
+    height: 500px;
     width:100%;
     background-image: url("https://themewagon.github.io/elearning/img/carousel-2.jpg?utm_source=chatgpt.com") ;
-    background-size: 100% 100%;
+    background-size:100% 500px ;
    
     background-position: center;
     position: relative;
@@ -105,7 +107,7 @@ img {
 
 .pg2-content {
     position: relative;
-    z-index: 2;
+    z-index: auto;
     width: 90%;
     max-width: 1140px;
     margin: auto;
