@@ -27,8 +27,6 @@
             </button>
         </div>
     </header>
-
-</html>
 <section class="pg2">
     <div class="pg2-overlay"></div>
 
@@ -606,5 +604,34 @@
 </footer>
 
 
+<script>
+    const mobileBreakpoint = window.matchMedia('(max-width: 900px)');
+    const menuButton = document.getElementById('menuBtn');
+    const navigation = document.getElementById('navLinks');
+
+    function setMobileMenuLayout() {
+        const isMobile = mobileBreakpoint.matches;
+        menuButton.style.display = isMobile ? 'block' : 'none';
+        navigation.style.display = isMobile ? 'none' : 'flex';
+        navigation.style.position = isMobile ? 'absolute' : 'static';
+        navigation.style.top = isMobile ? '100%' : 'auto';
+        navigation.style.left = isMobile ? '0' : 'auto';
+        navigation.style.width = isMobile ? '100%' : 'auto';
+        navigation.style.flexDirection = isMobile ? 'column' : 'row';
+        navigation.style.background = isMobile ? '#ffffff' : 'transparent';
+        navigation.style.padding = isMobile ? '15px 0' : '0';
+    }
+
+    function toggleMobileMenu() {
+        const isOpen = navigation.style.display === 'flex';
+        navigation.style.display = isOpen ? 'none' : 'flex';
+        menuButton.setAttribute('aria-expanded', String(!isOpen));
+        menuButton.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
+        menuButton.querySelector('i').className = isOpen ? 'fa-solid fa-bars' : 'fa-solid fa-xmark';
+    }
+
+    setMobileMenuLayout();
+    mobileBreakpoint.addEventListener('change', setMobileMenuLayout);
+</script>
 </body>
 </html>
