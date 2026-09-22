@@ -3,50 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>eLEARNING - Online Education</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-
+    <title>eLEARNING</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<script>
-function toggleMenu() {
-    document.querySelector(".navbar").classList.toggle("show");
-}
-</script>
 <body>
-
-<header class="header">
-
-    <div class="logo">
-        <i class="fa-solid fa-book-open"></i>
-        <span>eLEARNING</span>
-    </div>
-
-    <nav class="navbar">
-        <a href="#" class="active">HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">COURSES</a>
-        <a href="#">PAGES <i class="fa-solid fa-chevron-down"></i></a>
-        <a href="#">CONTACT</a>
-    </nav>
-
-    <a href="#" class="join-btn">
-        Join Now
-        <i class="fa-solid fa-arrow-right"></i>
-    </a>
-    <div class="hamburger">
-    <i class="fa-solid fa-bars"></i>
-</div>
-   
-</header>
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-book-open"></i>
+            eLEARNING
+        </div>
+        <nav class="nav-links" id="navLinks">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">COURSES</a>
+            <a href="#">PAGES</a>
+            <a href="#">CONTACT</a>
+        </nav>
+        <div class = "nav-btn">
+            <a href="#" class="join-btn">Join Now</a>
+            <button class="mobile-menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
 
 </html>
 <section class="pg2">
