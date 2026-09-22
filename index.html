@@ -8,21 +8,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar">
+    <header class="navbar" style="display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:1000;">
         <div class="logo">
             <i class="fa-solid fa-book-open"></i>
             eLEARNING
         </div>
-        <nav class="nav-links" id="navLinks">
+        <nav class="nav-links" id="navLinks" style="display:flex; align-items:center; gap:30px;">
             <a href="#">HOME</a>
             <a href="#">ABOUT</a>
             <a href="#">COURSES</a>
             <a href="#">PAGES</a>
             <a href="#">CONTACT</a>
         </nav>
-        <div class = "nav-btn">
+        <div class="nav-btn" style="display:flex; align-items:center;">
             <a href="#" class="join-btn">Join Now</a>
-            <button class="mobile-menu-btn" id="menuBtn">
+            <button class="mobile-menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" onclick="toggleMobileMenu()" style="display:none; background:none; border:0; color:#181d38; cursor:pointer; font-size:24px; padding:10px 20px;">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
